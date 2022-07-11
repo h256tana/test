@@ -4,7 +4,7 @@
 
 double myRoot(double x) // x の平方根を返す関数。x >= 0 ではないとき exit(1) とする
 {
-  double y; //myRoot関数と変数yの型がdouble型でなければならない
+  double y; //main関数内の結果の代入先xがdouble型であるため、myRoot関数と戻り値yの型がdouble型でなければならない
   if( x < 0 ){ //if( x <= 0 )について、引数i=0のときexitとなるため、x < 0が正しい
     exit(1);
   }
