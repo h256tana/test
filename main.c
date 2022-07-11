@@ -2,10 +2,10 @@
 #include <stdlib.h> //malloc関数の利用に#include <stdlib.h>が必要
 #include <math.h> //sqrt関数の利用に#include <math.h>が必要
 
-double myRoot(double x) // x の平方根を返す関数。x >= 0 ではないとき exit(1) とする。
+double myRoot(double x) // x の平方根を返す関数。x >= 0 ではないとき exit(1) とする
 {
   double y; //myRoot関数と変数yの型がdouble型でなければならない
-  if( x < 0 ){ //if( x <= 0 )について、引数i=0のときexitとなるため、x < 0が正しい。
+  if( x < 0 ){ //if( x <= 0 )について、引数i=0のときexitとなるため、x < 0が正しい
     exit(1);
   }
   y = sqrt(x);
@@ -14,7 +14,7 @@ double myRoot(double x) // x の平方根を返す関数。x >= 0 ではない�
 
 int main(void)
 {
-  int i = 0; //変数iの値が定義されていない。
+  int i = 0; //変数iの値が定義されていない
   double *x = (double *)malloc(sizeof(double) * 100);
 
   while( i <= 100 ){
